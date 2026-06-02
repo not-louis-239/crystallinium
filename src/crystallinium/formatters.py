@@ -17,4 +17,12 @@ def format_time(s: float, /) -> str:
     hours = s // 3600
     minutes = (s // 60) % 60
     seconds = (s % 60) // 1
-    return f"{hours:02}:{minutes:02}:{seconds:02}"
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+def _test():
+    durations = [1, 3600, 7200, 86400, 90000]
+    for duration in durations:
+        print(f"{duration} seconds is {format_time(duration)}")
+
+if __name__ == "__main__":
+    _test()

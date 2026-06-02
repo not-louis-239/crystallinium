@@ -26,7 +26,7 @@ class JSONConvertible(ABC):
     def to_json(self) -> _JSONObject:
         raise NotImplementedError
 
-    @abstractmethod
     @classmethod
+    @abstractmethod
     def from_json(cls, json_data: _JSONObject) -> JSONConvertible:
         raise NotImplementedError
