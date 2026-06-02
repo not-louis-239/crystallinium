@@ -4,6 +4,10 @@ This is an aggregated library of all the Python stuff I keep making over and ove
 
 I mostly made this because I'm tired of writing `def draw_text` a hundred bajillion times.
 
+## Installation
+
+To install this package itself, run: `pip install git+https://github.com/not-louis-239/crystallinium`
+
 ## Requirements
 
 - Python 3.x (tested on 3.14.0, older versions may or may not work)
